@@ -6,14 +6,16 @@
 // Execute `rustlings hint lifetimes2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
-fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+fn longest<'a>(x: &'a str, y: & str) -> String {
+    let z:String;
     if x.len() > y.len() {
-        x
+        z = x.to_string()
     } else {
-        y
+        z = y.to_string()
     }
+
+    return z
 }
 
 fn main() {
